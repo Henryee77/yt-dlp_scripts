@@ -10,7 +10,6 @@ yt-dlp --no-playlist -x --audio-format "mp3" --output "%%(title)s.%%(ext)s" "%UR
 ECHO.
 ECHO ======================================================================================================================
 ECHO.
-SET /P CONTINUE="Download another song? [y/n] "
-if /I "%CONTINUE%"=="y" GOTO :download_song
+GOTO :download_song
 ECHO Done!
 PAUSE
